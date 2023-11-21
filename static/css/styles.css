@@ -1,0 +1,116 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #343a40;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.big-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-height: 500px;
+    max-width: 1000px;
+}
+
+.big-box p {
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+
+#movie-search {
+    width: 240px;
+    margin-right: 10px; /* Add some spacing between the input and button */
+    padding: 8px; /* Adjust as needed */
+}
+
+#go-button {
+    width: 60px;
+    padding: 9px;
+}
+
+/* Add your existing styles here */
+
+.recommendations {
+    margin-top: 10px; /* Adjust as needed */
+    /* padding: 15px; */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+.recommendations p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.recommendations hr {
+    border: 0.5px solid #333;
+    margin: 10px 0;
+}
+
+.recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommendations li {
+    margin: 15px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Add any additional styles for the predictions section as needed */
+
+#movie-dropdown{
+    display: none;
+    width: 310px;
+    margin-top: 5px;
+}
