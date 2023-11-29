@@ -35,12 +35,6 @@
       }
     }
   ],
-  "install": {
-    "include": [
-      "node_modules",
-      "package.json",
-      "requirements.txt"
-    ],
     "target": "/var/task"
   }
 }
