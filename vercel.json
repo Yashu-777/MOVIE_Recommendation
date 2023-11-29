@@ -1,0 +1,46 @@
+{
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb"
+      },
+      "functions": {
+        "api/*.js": {
+          "runtime": "@vercel/python"
+        }
+      }
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production",
+    "FLASK_APP": "app"
+  },
+  "version": 2,
+  "routes": [
+    { "src": "/.*", "dest": "/app.py" }
+  ],
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb"
+      },
+      "functions": {
+        "api/*.js": {
+          "runtime": "@vercel/python"
+        }
+      }
+    }
+  ],
+  "install": {
+    "include": [
+      "node_modules",
+      "package.json",
+      "requirements.txt"
+    ],
+    "target": "/var/task"
+  }
+}
